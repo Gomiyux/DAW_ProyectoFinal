@@ -6,11 +6,47 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>OnlineShopping</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="index.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src = "./javascriptEndpointclient.js" type="text/javascript"></script>
+        <!-- Script that includes the Google-hosted JavaScript client library -->
+        <script src="https://apis.google.com/js/client.js?onload=init"></script>
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        
     </head>
     <body>
-        <div>TODO write content</div>
+        <div id="header" class="container-fluid">
+            <div id="logo" class="text-center" >
+                <p id="titulo">Tradder</p>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="text-center">
+                <ul  id="Menu" class="nav nav-pills">
+                    <li role="presentation" class="active"><a href="#">Home</a></li>
+                    <li role="presentation"><a href="#">Ver Articulos</a></li>
+                    <li role="presentation"><a href="#">Publicar Articulos</a></li>
+                    <li role="presentation"><a href="#">Alta</a></li>
+                    <li role="presentation"><a href="#">Mis Articulos de Interes</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="jumbotron">
+            <h1>¡Hola!</h1>
+            <p>Bienvenido a Tradder, un portal donde podras comprar aquello que siempre quisiste y vender lo que ya no necesitas</p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">Ver articulos</a></p>
+          </div>
+        </div>
+          
     </body>
 </html>

@@ -1,0 +1,59 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21-dic-2016, 20:55:15
+    Author     : carlo
+*/
+
+
+/*CABECERA*/
+
+body{
+    width: 100%;
+    background: url("./images/Charleston_City_Market1.jpg") no-repeat fixed center;
+    background-size: auto ;
+}
+
+#header{
+    
+    background-color: black;
+    
+    color: white;   
+    
+}
+
+#titulo{
+  font-size: 2em;
+  padding-top: 0.5em;
+}
+
+.nav-pills{
+    
+    display: inline-block;
+    
+}
+
+.jumbotron{
+    margin-top: 10%;
+}
+
+.nav-pills > li > a {
+    
+    margin-right:10px; /* pill spread */
+    font-size: 15px;
+    color:black;
+    background-color: #FAFAFA;
+    
+    
+}
+
+.nav-pills > li > .active > a {
+    background-color: black;
+}
+
+
+/*MENU*/
+
