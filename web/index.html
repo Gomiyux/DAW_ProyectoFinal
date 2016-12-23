@@ -24,10 +24,11 @@ and open the template in the editor.
         
     </head>
     <body>
-        <div id="header" class="container-fluid">
+        <div id="header" class="container-fluid" >
             <div id="logo" class="text-center" >
                 <p id="titulo">Tradder</p>
             </div>
+            
         </div>
         <div id="menu_ocultar" class="container-fluid">
             <div class="text-center">
@@ -41,15 +42,22 @@ and open the template in the editor.
             </div>
         </div>
         <div class="container-fluid">
-            <span id="Menu_Boton" class="btn btn-primary">Menu</span>
+            <span id="Menu_Boton" role="button" class="btn btn-primary" onclick="desplegar_menu()">Menu</span>
+            <div id="menu_desplegable" class="text-center" style="display:none">
+                <span class="btn btn-primary men">Home</span><br>
+                <span class="btn btn-primary men">Ver Articulos</span><br>
+                <span class="btn btn-primary men">Publicar Articulos</span><br>
+                <span class="btn btn-primary men">Alta</span><br>
+                <span class="btn btn-primary men">Mis Articulos de Interes</span>
+            </div>
         </div>
         <div class="container-fluid">
             <div class="jumbotron">
             <h1>¡Hola!</h1>
             <p>Bienvenido a Tradder, un portal donde podras comprar aquello que siempre quisiste y vender lo que ya no necesitas</p>
             
-            <p><a class="btn btn-primary btn-lg" href="#" role="button" onclick="show()">Ver más</a></p>
-            <div id="oculto_principal" class="row" >
+            <p><a id="botonampli" class="btn btn-primary btn-lg" href="#" role="button" onclick="show()">Ver más</a></p>
+            <div id="oculto_principal" class="row" style="display:none">
                 
                 <div id="glyp1" class="col-md-4 text-center">
                     
@@ -72,7 +80,7 @@ and open the template in the editor.
             </div>
           </div>
         </div>
-        <div id="footer" class="container-fluid">
+        <div style="position: absolute" id="footer" class="container-fluid">
             <p>Carlos Gomez Coca</p>
             <p>Desarrollo de Aplicaciones Web / infoDaw@gmail.com</p>
             <span class="glyphicon glyphicon-equalizer" aria-hidden="true"></span>

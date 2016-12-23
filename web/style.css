@@ -15,15 +15,23 @@ and open the template in the editor.
 
 body{
     width: 100%;
-    background: url("./images/Charleston_City_Market1.jpg") no-repeat fixed center;
-    background-size: auto ;
+    height: 100%;
+        background: url("./images/Charleston_City_Market1.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
 }
+
+
 
 #header{
     
     background-color: black;
     color: white;   
     
+    right: 0;
+    left: 0;
 }
 
 
@@ -37,7 +45,6 @@ body{
     display: inline-block;
     
 }
-
 
 
 .jumbotron{
@@ -58,6 +65,7 @@ body{
     color:black;
     background-color: #FAFAFA;
     
+    
 }
 
 .nav-pills > li > .active > a {
@@ -70,13 +78,26 @@ body{
 #Menu_Boton{
     width: 100%;
     display: block;
+    
 }
 
 #menu_ocultar{
     display: none;
 }
 
+#menu_desplegable > span{
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #EEEEEE;
+    color: black;
+}
 
+#menu_desplegable > span:hover{
+    
+    background: #BBDEFB;
+    
+}
 
 
 /*Footer*/
@@ -86,7 +107,7 @@ body{
     height: auto;
     background-color: black;
     color: white;
-    position: relative;
+    position: static;
     right: 0;
     bottom: 0;
     left: 0;
@@ -119,13 +140,25 @@ body{
 }
 
 @media (min-width: 768px) {
+    
+#menu_desplegable{
+    display:none;
+}
+
+.men{
+    display:none;
+}
 
 /*CABECERA*/
 
 body{
     width: 100%;
-    background: url("./images/Charleston_City_Market1.jpg") no-repeat fixed center;
-    background-size: auto ;
+    height: 100%;
+    background: url("./images/Charleston_City_Market1.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
 }
 
 #header{
@@ -192,6 +225,7 @@ body{
     background-color: black;
     color: white;
     position: absolute;
+    
     right: 0;
     bottom: 0;
     left: 0;
@@ -204,7 +238,7 @@ body{
 /*Desplegable Jumbotron*/
 
 #oculto_principal{
-    margin-left: 10px;
+    
     padding-top: 30px;
     display: none;
     
