@@ -8,23 +8,19 @@ and open the template in the editor.
     Author     : carlo
 */
 
-/*Tablets/mobiles*/
-@media (max-width: 768px) { 
-    
-    /*CABECERA*/
+
+
+/*Codigo Comun*/
 
 body{
-    width: 100%;
-    height: 100%;
+        width: 100%;
+        height: 100%;
         background: url("./images/Charleston_City_Market1.jpg") no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
-        background-size: cover;
+        background-size: auto;
 }
-
-
-
 #header{
     
     background-color: black;
@@ -33,58 +29,61 @@ body{
     right: 0;
     left: 0;
 }
-
-
 #titulo{
   font-size: 2em;
   padding-top: 0.5em;
 }
-
-.nav-pills{
-    
-    display: inline-block;
-    
-}
-
-
 .jumbotron{
     margin-top: 3%;
 }
-
-/*MENU*/
-
-
-.nav-pills > li > a:focus  {
-    background-color: #BBDEFB;
+#oculto_principal{
+    margin-left: 10px;
+    padding-top: 30px;
+    display:none;
+    
 }
-
+.nav-pills{
+    
+    display: inline-block;
+}
 .nav-pills > li > a {
     
-    margin-right:10px; /* pill spread */
+    margin-right:20px; /* pill spread */
     font-size: 15px;
     color:black;
-    background-color: #FAFAFA;
+    background-color: #E1F5FE;
     
+    /*Ampliar*/
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* IE 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+    
+}
+.nav-pills > li > a:hover {
+    
+    -webkit-transform:scale(1.2); /* Safari and Chrome */
+    -moz-transform:scale(1.2); /* Firefox */
+    -ms-transform:scale(1.2); /* IE 9 */
+    -o-transform:scale(1.2); /* Opera */
+     transform:scale(1.2);
     
 }
 
-.nav-pills > li > .active > a {
-    background-color: black;
-}
 
+/*Tablets/mobiles*/
 
-
-
+@media (max-width: 768px) { 
+   
 #Menu_Boton{
     width: 100%;
     display: block;
     
 }
-
 #menu_ocultar{
     display: none;
 }
-
 #menu_desplegable > span{
     left: 0;
     right: 0;
@@ -92,16 +91,11 @@ body{
     background: #EEEEEE;
     color: black;
 }
-
 #menu_desplegable > span:hover{
     
     background: #BBDEFB;
     
 }
-
-
-/*Footer*/
-
 #footer{
     
     height: auto;
@@ -116,16 +110,6 @@ body{
     font-size: 0.9em;
     line-height: 5px;
 }
-
-/*Oculto Jumbotron*/
-
-#oculto_principal{
-    margin-left: 10px;
-    padding-top: 30px;
-    display:none;
-    
-}
-
 #glyp1{
     font-size: 2em;
 }
@@ -136,89 +120,25 @@ body{
     font-size: 2em;
 }
 
-
 }
 
+/*Escritorio*/
+
 @media (min-width: 768px) {
+    
     
 #menu_desplegable{
     display:none;
 }
-
 .men{
     display:none;
 }
-
-/*CABECERA*/
-
-body{
-    width: 100%;
-    height: 100%;
-    background: url("./images/Charleston_City_Market1.jpg") no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-}
-
-#header{
-    
-    background-color: black;
-    color: white;   
-    
-}
-
-#titulo{
-  font-size: 2em;
-  padding-top: 0.5em;
-}
-
-.nav-pills{
-    
-    display: inline-block;
-    
-}
-
-
-
-.jumbotron{
-    margin-top: 3%;
-}
-
-/*MENU*/
-
-
-.nav-pills > li > a:focus  {
-    background-color: #BBDEFB;
-}
-
-.nav-pills > li > a {
-    
-    margin-right:10px; /* pill spread */
-    font-size: 15px;
-    color:black;
-    background-color: #FAFAFA;
-    
-}
-
-.nav-pills > li > .active > a {
-    background-color: black;
-}
-
-
-
-
 #menu_ocultar{
     display: block;
 }
-
 #Menu_Boton{
     display: none;
 }
-
-
-/*Footer*/
-
 #footer{
     
     height: auto;
@@ -234,29 +154,15 @@ body{
     font-size: 0.9em;
     line-height: 5px;
 }
-
-/*Desplegable Jumbotron*/
-
-#oculto_principal{
-    
-    padding-top: 30px;
-    display: none;
-    
-}
-
 #glyp1{
     font-size: 3em;
 }
-
 #glyp2{
     font-size: 3em;
 }
-
 #glyp3{
     font-size: 3em;
 }
-
-
 
 }
 
