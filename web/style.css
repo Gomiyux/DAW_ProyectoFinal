@@ -70,6 +70,34 @@ body{
      transform:scale(1.2);
     
 }
+#footer{
+    margin-top: 30px;
+}
+
+
+
+
+
+
+/*Alta*/
+
+#alta{
+    padding: 20px;
+    color: black;
+    background-color: #FFE0B2;
+    margin-top: 20pX;
+}
+.formulario{
+    width: 50%;
+}
+#boton_formulario{
+    margin-top: 20px;
+}
+
+
+
+
+
 
 
 /*Tablets/mobiles*/
@@ -84,14 +112,14 @@ body{
 #menu_ocultar{
     display: none;
 }
-#menu_desplegable > span{
+#menu_desplegable > a > span{
     left: 0;
     right: 0;
     width: 100%;
     background: #EEEEEE;
     color: black;
 }
-#menu_desplegable > span:hover{
+#menu_desplegable > a> span:hover{
     
     background: #BBDEFB;
     
@@ -101,7 +129,7 @@ body{
     height: auto;
     background-color: black;
     color: white;
-    position: static;
+    position: relative;
     right: 0;
     bottom: 0;
     left: 0;
@@ -121,6 +149,13 @@ body{
 }
 
 }
+
+
+
+
+
+
+
 
 /*Escritorio*/
 

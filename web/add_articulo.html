@@ -33,9 +33,9 @@ and open the template in the editor.
         <div id="menu_ocultar" class="container-fluid">
             <div class="text-center">
                 <ul  id="Menu" class="nav nav-pills">
-                    <li role="presentation" class="active"><a href="./index.html">Home</a></li>
+                    <li role="presentation"><a href="./index.html">Home</a></li>
                     <li role="presentation"><a href="./ver_articulos.html">Ver Articulos</a></li>
-                    <li role="presentation"><a href="./add_articulo.html">Publicar Articulos</a></li>
+                    <li role="presentation" class="active"><a href="./add_articulo.html">Publicar Articulos</a></li>
                     <li role="presentation"><a href="./alta.html">Alta</a></li>
                     <li role="presentation"><a href="./interes.html">Mis Articulos de Interes</a></li>
                 </ul>
@@ -43,6 +43,7 @@ and open the template in the editor.
         </div>
         <div class="container-fluid">
             <span id="Menu_Boton" role="button" class="btn btn-primary" onclick="desplegar_menu()">Menu</span>
+            
             <div id="menu_desplegable" class="text-center" style="display:none">
                 <a href="./index.html"> <span class="btn btn-primary men">Home</span></a><br>
                 <a href="./ver_articulos.html"><span class="btn btn-primary men">Ver Articulos</span></a><br>
@@ -50,36 +51,9 @@ and open the template in the editor.
                 <a href="./alta.html"><span class="btn btn-primary men">Alta</span></a><br>
                 <a href="./interes.html"><span class="btn btn-primary men">Mis Articulos de Interes</span></a>
             </div>
-        </div>
-        <div class="container-fluid">
-            <div class="jumbotron">
-            <h1>¡Hola!</h1>
-            <p>Bienvenido a Tradder, un portal donde podras comprar aquello que siempre quisiste y vender lo que ya no necesitas</p>
             
-            <p><a id="botonampli" class="btn btn-primary btn-lg" href="#" role="button" onclick="show()">Ver más</a></p>
-            <div id="oculto_principal" class="row" style="display:none">
-                
-                <div id="glyp1" class="col-md-4 text-center">
-                    
-                    <span class="glyphicon glyphicon-tags " aria-hidden="true"></span>
-                    <p>Etiqueta tus articulos y publicalos</p>
-                    
-                </div>
-                <div id="glyp2" class="col-md-4 text-center">
-                    
-                    <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
-                    <p>Marca como favoritos aquellos que mas te gusten</p>
-                    
-                </div>
-                <div id="glyp3" class="col-md-4 text-center">
-                    
-                    <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
-                    <p>Si necesitas ayuda puedes ponerte en contacto con nosotros</p>
-                    
-                </div>
-            </div>
-          </div>
         </div>
+        
         <div style="position: absolute" id="footer" class="container-fluid">
             <p>Carlos Gomez Coca</p>
             <p>Desarrollo de Aplicaciones Web / infoDaw@gmail.com</p>
