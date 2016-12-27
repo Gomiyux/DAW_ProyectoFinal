@@ -26,7 +26,7 @@ body{
     background-color: black;
     color: white;   
     
-    right: 0;
+    
     left: 0;
 }
 #titulo{
@@ -76,14 +76,6 @@ body{
 #footer{
     margin-top: 30px;
 }
-.imagen_usuario{
-    margin-top: 10px;
-    width: 30px;
-    height: 30px;
-}
-.email_usuario{
-    font-size: 0.7em;
-}
 
 
 
@@ -104,13 +96,18 @@ body{
 }
 
 
+
 /*INDEX_PRELOGIN*/
 
 .login{
-    width: 20%;
+    width: auto;
     float: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-
+.boton_login{
+    margin-top: 20px;
+}
 
 .novedades{
     color: red;
@@ -151,17 +148,33 @@ body{
     font-size: 1em;
 }
 
-
-
 /*Tablets/mobiles*/
 
+@media (max-width: 995px){
+    #header{
+    
+    background-color: black;
+    color: white;   
+    left: 0;
+    padding-bottom: 10px;
+    
+    }
+    
+}
+
 @media (max-width: 768px) { 
+    
+    
+
    
 #Menu_Boton{
     width: 100%;
     display: block;
     
 }
+
+
+
 #menu_ocultar{
     display: none;
 }
@@ -200,14 +213,20 @@ body{
 #glyp3{
     font-size: 2em;
 }
-.imagen_usuario{
-    margin-top: 0px;
-    width: 30px;
-    height: 30px;
+.boton_login{
+    margin-top: 5px;
+}
+#header{
+    
+    background-color: black;
+    color: white;   
+    left: 0;
+    padding-bottom: 10px;
+    
 }
 
-}
 
+}
 
 
 /*Escritorio*/
@@ -255,6 +274,7 @@ body{
 #boton_formulario{
     margin-top: 50px;
 }
+
 
 }
 

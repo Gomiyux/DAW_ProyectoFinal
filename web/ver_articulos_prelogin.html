@@ -10,7 +10,7 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="index.js"></script>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="style_prelogin.css">
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <!-- jQuery library -->
@@ -25,24 +25,36 @@ and open the template in the editor.
     </head>
     <body>
         <div id="header" class="container-fluid" >
-            <div id="logo" class="text-center row" >
-                <div class="col-md-2"></div>
-                <p  class="col-md-8" id="titulo">Tradder</p>
-                <div class="col-md-2">
-                    <img  src="./images/user.png" alt="" class="img-circle imagen_usuario">
-                    <p class="email_usuario">Usuario@Correo.es</p>
+               <div id="logo" class="text-center row" >
+                   <div class="col-md-3" ></div>
+                   <div class="col-md-6" >
+                      <p id="titulo">Tradder</p> 
+                   </div>     
+                
+                <div class="col-md-2 login">
+                    
+                    <div class="input-group input-group-sm">
+                            <span class="input-group-addon" id="sizing-addon1">@</span>
+                            <input type="text" class="form-control" placeholder="Correo Electronico" aria-describedby="sizing-addon1">
+                    </div>
+                    <div class="input-group input-group-sm">
+                            <span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></span>
+                            <input type="text" class="form-control" placeholder="Contraseña" aria-describedby="sizing-addon1">
+                            
+                    </div> 
+                   
                 </div>
-            </div>
+                <div class="col-md-1" >
+                       <button type="button" class="btn btn-success boton_login">Entrar</button>
+                </div>  
+            </div>        
         </div>
-        
         <div id="menu_ocultar" class="container-fluid">
             <div class="text-center">
                 <ul  id="Menu" class="nav nav-pills">
-                    <li role="presentation"><a href="./index.html">Home</a></li>
-                    <li role="presentation"><a href="./ver_articulos.html">Ver Articulos</a></li>
-                    <li role="presentation" class="active"><a href="./add_articulo.html">Publicar Articulos</a></li>
-                    
-                    <li role="presentation"><a href="./interes.html">Mis Articulos de Interes</a></li>
+                    <li role="presentation"><a href="./index_prelogin.html">Home</a></li>
+                    <li role="presentation" class="active"><a href="./ver_articulos_prelogin.html">Ver Articulos</a></li>
+                    <li role="presentation"><a href="./alta_prelogin.html">Alta</a></li>
                 </ul>
             </div>
         </div>
@@ -50,10 +62,9 @@ and open the template in the editor.
             <span id="Menu_Boton" role="button" class="btn btn-primary" onclick="desplegar_menu()">Menu</span>
             
             <div id="menu_desplegable" class="text-center" style="display:none">
-                <a href="./index.html"> <span class="btn btn-primary men">Home</span></a><br>
-                <a href="./ver_articulos.html"><span class="btn btn-primary men">Ver Articulos</span></a><br>
-                <a href="./add_articulo.html"><span class="btn btn-primary men">Publicar Articulos</span></a><br>
-                <a href="./interes.html"><span class="btn btn-primary men">Mis Articulos de Interes</span></a>
+                <a href="./index_prelogin.html"> <span class="btn btn-primary men">Home</span></a><br>
+                <a href="./ver_articulos_prelogin.html"><span class="btn btn-primary men">Ver Articulos</span></a><br>
+                <a href="./alta_prelogin.html"><span class="btn btn-primary men">Alta</span></a><br>
             </div>
             
         </div>
