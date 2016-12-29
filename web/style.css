@@ -13,62 +13,67 @@ and open the template in the editor.
 /*Codigo Comun*/
 
 body{
-        width: 100%;
-        height: 100%;
-        background: url("./images/Charleston_City_Market1.jpg") no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: auto;
+    width: 100%;
+    height: 100%;
+    background: url("./images/fondo.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: auto;
 }
 #header{
-    
+
     background-color: black;
     color: white;   
-    
+
     right: 0;
     left: 0;
 }
 #titulo{
-  font-size: 2em;
-  padding-top: 0.5em;
+    font-size: 2em;
+    padding-top: 0.5em;
 }
 .jumbotron{
     margin-top: 3%;
+    background-color: #A8EEE0;
+    background-image: url("./images/productos.png") ;
+    background-repeat: no-repeat;
+    background-position: right top;
+
 }
 #oculto_principal{
     margin-left: 10px;
     padding-top: 30px;
     display:none;
-    
+
 }
 .nav-pills{
-    
+
     display: inline-block;
 }
 .nav-pills > li > a {
-    
+
     margin-right:20px; /* pill spread */
     font-size: 15px;
     color:black;
     background-color: #E1F5FE;
-    
+
     /*Ampliar*/
     -webkit-transition: all 1s ease; /* Safari and Chrome */
     -moz-transition: all 1s ease; /* Firefox */
     -ms-transition: all 1s ease; /* IE 9 */
     -o-transition: all 1s ease; /* Opera */
     transition: all 1s ease;
-    
+
 }
 .nav-pills > li > a:hover {
-    
+
     -webkit-transform:scale(1.2); /* Safari and Chrome */
     -moz-transform:scale(1.2); /* Firefox */
     -ms-transform:scale(1.2); /* IE 9 */
     -o-transform:scale(1.2); /* Opera */
-     transform:scale(1.2);
-    
+    transform:scale(1.2);
+
 }
 .nav-pills > li > a >span{
     margin-right: 2px;
@@ -83,6 +88,13 @@ body{
 }
 .email_usuario{
     font-size: 0.7em;
+}
+#carousel-example-generic{
+    border-radius: 25px 25px 25px 25px;
+    -moz-border-radius: 25px 25px 25px 25px;
+    -webkit-border-radius: 25px 25px 25px 25px;
+    border: 1px solid #000000;
+
 }
 
 
@@ -118,29 +130,94 @@ body{
     animation: 4s infinite colorchange;
 }
 
+/*AÑADIR ARTICULO */
+
+.container-add-producto{
+
+    background-color: #337AB7;
+    color: #E1F5FE;
+    padding-top: px;
+    font-size: 0.9em;
+    border-radius: 25px 25px 25px 25px;
+    -moz-border-radius: 25px 25px 25px 25px;
+    -webkit-border-radius: 25px 25px 25px 25px;
+    border: 1px solid #000000;
+    width: 50%;
+
+
+}
+.container-add-producto2{
+
+    margin-top: 3%;
+    background-color: #D2F6EF;
+    color: black;
+    width: 45%;
+
+    border-radius: 25px 25px 25px 25px;
+    -moz-border-radius: 25px 25px 25px 25px;
+    -webkit-border-radius: 25px 25px 25px 25px;
+    border: 1px solid #000000;
+
+}
+.container-add-producto2 > p > span{
+    margin: 12px;
+}
+.container-add-producto3{
+
+    height: auto;
+
+    background-color: #D2F6EF;
+    background-image: url("./images/productos.png") ;
+    background-position: right left;
+
+    color:black;
+    padding: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 25px 25px 25px 25px;
+    -moz-border-radius: 25px 25px 25px 25px;
+    -webkit-border-radius: 25px 25px 25px 25px;
+    border: 1px solid #000000;
+}
+#boton_subir{
+    margin-top: 40px;
+}
+.productos_png{
+    size: auto;
+}
+.formulario_add{
+    padding: 20px;
+    background-color: #337AB7;
+    border-radius: 25px 25px 25px 25px;
+    -moz-border-radius: 25px 25px 25px 25px;
+    -webkit-border-radius: 25px 25px 25px 25px;
+    border: 1px solid #000000;
+}
+
+
 @keyframes colorchange {
-  0% {
-    color: orange;
-    transform:scale(1);
-  }
-  25% {
-    color: red;
-    
-    transform:scale(1.5);
-  }
-  50%{
-    
-    transform:scale(1);
-  }
-  
-  75% {
-    color: blue;
-    transform:scale(1.5);
-  }
-  100% {
-    color: orange;
-    transform:scale(1);
-  }
+    0% {
+        color: orange;
+        transform:scale(1);
+    }
+    25% {
+        color: red;
+
+        transform:scale(1.5);
+    }
+    50%{
+
+        transform:scale(1);
+    }
+
+    75% {
+        color: blue;
+        transform:scale(1.5);
+    }
+    100% {
+        color: orange;
+        transform:scale(1);
+    }
 }
 
 .precio{
@@ -156,55 +233,58 @@ body{
 /*Tablets/mobiles*/
 
 @media (max-width: 768px) { 
-   
-#Menu_Boton{
-    width: 100%;
-    display: block;
-    
-}
-#menu_ocultar{
-    display: none;
-}
-#menu_desplegable > a > span{
-    left: 0;
-    right: 0;
-    width: 100%;
-    background: #EEEEEE;
-    color: black;
-}
-#menu_desplegable > a> span:hover{
-    
-    background: #BBDEFB;
-    
-}
-#footer{
-    
-    height: auto;
-    background-color: black;
-    color: white;
-    position: relative;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 1rem;
-    text-align: center;
-    font-size: 0.9em;
-    line-height: 5px;
-}
-#glyp1{
-    font-size: 2em;
-}
-#glyp2{
-    font-size: 2em;
-}
-#glyp3{
-    font-size: 2em;
-}
-.imagen_usuario{
-    margin-top: 0px;
-    width: 30px;
-    height: 30px;
-}
+
+    #Menu_Boton{
+        width: 100%;
+        display: block;
+
+    }
+    #menu_ocultar{
+        display: none;
+    }
+    #menu_desplegable > a > span{
+        left: 0;
+        right: 0;
+        width: 100%;
+        background: #EEEEEE;
+        color: black;
+    }
+    #menu_desplegable > a> span:hover{
+
+        background: #BBDEFB;
+
+    }
+    #footer{
+
+        height: auto;
+        background-color: black;
+        color: white;
+        position: relative;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 1rem;
+        text-align: center;
+        font-size: 0.9em;
+        line-height: 5px;
+    }
+    #glyp1{
+        font-size: 2em;
+    }
+    #glyp2{
+        font-size: 2em;
+    }
+    #glyp3{
+        font-size: 2em;
+    }
+    .imagen_usuario{
+        margin-top: 0px;
+        width: 30px;
+        height: 30px;
+    }
+    .container-add-producto2{
+        margin-top: 40px;
+    }
 
 }
 
@@ -213,48 +293,48 @@ body{
 /*Escritorio*/
 
 @media (min-width: 768px) {
-    
-    
-#menu_desplegable{
-    display:none;
-}
-.men{
-    display:none;
-}
-#menu_ocultar{
-    display: block;
-}
-#Menu_Boton{
-    display: none;
-}
-#footer{
-    
-    height: auto;
-    background-color: black;
-    color: white;
-    position: relative;
-    margin-top: 100px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 1rem;
-    text-align: center;
-    font-size: 0.9em;
-    line-height: 5px;
-}
-#glyp1{
-    font-size: 3em;
-}
-#glyp2{
-    font-size: 3em;
-}
-#glyp3{
-    font-size: 3em;
-}
 
-#boton_formulario{
-    margin-top: 50px;
-}
+
+    #menu_desplegable{
+        display:none;
+    }
+    .men{
+        display:none;
+    }
+    #menu_ocultar{
+        display: block;
+    }
+    #Menu_Boton{
+        display: none;
+    }
+    #footer{
+
+        height: auto;
+        background-color: black;
+        color: white;
+        position: relative;
+        margin-top: 100px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 1rem;
+        text-align: center;
+        font-size: 0.9em;
+        line-height: 5px;
+    }
+    #glyp1{
+        font-size: 3em;
+    }
+    #glyp2{
+        font-size: 3em;
+    }
+    #glyp3{
+        font-size: 3em;
+    }
+
+    #boton_formulario{
+        margin-top: 50px;
+    }
 
 }
 
